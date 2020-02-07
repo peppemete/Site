@@ -17,10 +17,10 @@ p{
 
 /*combined*/
 p.red {
-  font-style: italic;
+  color:blue;
 }
 
 /*child*/
 p .red {
-  font-style: italic;
+  color:green;
 }
