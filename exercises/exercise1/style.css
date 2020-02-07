@@ -19,11 +19,15 @@ h2{
 }
 h3{
   font-size: 1.5em;
-  font-style: bold;
+  font-weight: bold;
 }
 
 p{
   font-size:1.5em;
+}
+a{
+  color:white;
+  font-style: italic;
 }
 
 
