@@ -1,0 +1,48 @@
+html{
+  font-family: "Helvetica Neue LT Std", "Helvetica Neue" , sans-serif;
+  font-size: 125%;
+}
+body{
+  background-color: beige;
+}
+article{
+  max-width: 500px;
+}
+p{
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+h3{
+  font-size: 1.25em;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+h1{
+  font-size: 2em;
+}
+
+.extra p{
+  margin:0;
+  color:red;
+
+  text-indent: 1em;
+}
+
+.extra p:first-child{
+  color:blue;
+  text-indent: 0;
+}
+
+.extra p:first-child:first-letter{
+  font-size: 2em;
+  background-color: rgb(28, 200, 12);
+}
+
+.extra p:nth-child(even){
+  color:green;
+}
+
