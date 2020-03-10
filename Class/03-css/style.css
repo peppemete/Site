@@ -1,0 +1,26 @@
+body{
+  /*style*/
+  background-color: #eeeeee;
+}
+
+p{
+  border: 3px solid black;
+}
+/*class*/
+.big{
+  font-size: 2em;
+}
+
+.red{
+  color: #b30606;
+}
+
+/*combined*/
+p.red {
+  color:blue;
+}
+
+/*child*/
+p .red {
+  color:green;
+}
