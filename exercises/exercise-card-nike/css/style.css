@@ -23,7 +23,7 @@ a {
 }
 
 .card-left {
-
+  position:relative;
   padding: 2em;
   background-image: linear-gradient( #F6213F , #EC663A );
   display: inline-block;
@@ -36,6 +36,27 @@ a {
   padding: 1em;
   display: inline-block;
   width: 60%;
+}
+
+.card-left-mask {
+  width: 100%;
+  margin:0;
+  position: absolute;
+  left:0;
+  top:10em;
+  overflow: hidden;
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.card-left-backtext{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11em;
+  margin: 0;
+  position: relative;
+  left: -0.5em;
+  top: -45px;
+  
 
 }
 
@@ -55,8 +76,8 @@ a {
 .card-left-product {
   width: 150%;
   position: relative;
-  left: -4.5em;
-  top:-0.5em;
+  left: -4.6em;
+  top:-0.8em;
   transform:rotate(-30deg);
   -webkit-transform: rotate(-30deg);
   
@@ -65,8 +86,8 @@ a {
 .card-left-info {
   color:white;
   font-size: 0.55em;
-
-  padding-right:3em;
+  font-weight: 100;
+  padding-right:2em;
   padding-top:0;
   margin-top: -2em;
 }
@@ -225,28 +246,33 @@ a {
 }
 
 .card-right-colour li {
+  box-sizing: content-box;
   display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
+  width: 1em;
+  height: 1em;
   margin: 0.5em;
   border-radius: 50%;
   
 }
 .card-right-colour-blue {
+  border: 2px solid white;
   background-color: blue;
 } 
 .card-right-colour-grey {
+  border: 2px solid white;
   background-color: grey;
 } 
 .card-right-colour-yellow {
+  border: 2px solid white;
   background-color: yellow;
 } 
 .card-right-colour-red {
+  border: 2px solid white;
   background-color: red;
 } 
 
 .card-right-colour-click {
-  border: 2px solid #F6213F;
+  box-shadow: 0px 0px 2px gray;
 }
 
 .card-right-size-primary-CTA {
