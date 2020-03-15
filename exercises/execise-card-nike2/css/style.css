@@ -25,12 +25,13 @@ body{
 
 
 .box-header-menu {
+  display: inline-block;
   text-align: center;
   width: 1em;
   margin: 1em auto;
 }
 
-.box-header-menu i {
+.box-header-menu img {
   width: 1em;
 
 }
