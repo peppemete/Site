@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation_3</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+  body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+
+    background-color: #eeeeee;
+  }
+
+  .content{
+    width: 70%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+    list-style: none;
+    padding:0;
+    background-color: pink;
+  }
+  .child {
+    justify-self: self-end;
+    text-align: center;
+    padding:1em;
+    border-left:2px red solid;
+  }
+
+  .child a{
+    color:red;
+  }
+
+  .logo {
+    background-color: red;
+    margin-right:auto;
+  }
+
+  .logo h1{
+    margin: 0;
+    color: white;
+  }
+
+  </style>
+    
+</head>
+<body>
+  <ul class="content"> 
+    <li class="logo child"><a href="#"><h1>Site Title</h1></a></li>
+    <li class="child"><a href="#">Item 1</a></li>
+    <li class="child"><a href="#">Item 2</a></li>
+    <li class="child"><a href="#">Item 3</a></li>
+    <li class="child"><a href="#">Item 4</a></li>
+  </ul>
+</body>
+</html>

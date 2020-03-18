@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout_2</title>
+  <style>
+    body{
+      background-color: #eeeeee;
+      font-family: sans-serif;
+    }
+    .box{
+      display: flex;
+      flex-direction: column;
+
+      height: 50em;
+      width: 50em;
+      margin: auto;
+  
+
+      border: 2px dashed  ;
+
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      padding: 1em;
+    }
+
+    .header-child{
+      padding:0 1em;
+      border-left:1px solid ;
+    }
+
+    .logo{
+      border:0;
+      margin-right: auto;
+      margin-left:-1em;
+    }
+
+    .header-child:nth-child(2){
+      border: 0;
+    }
+
+    .content{
+      display: flex;
+      flex-basis: 100%;
+    }
+
+    .child{
+      padding: 2em;
+      flex-grow: 1;
+      flex-basis:0;
+      background-color: #cccccc;
+    }
+    .content-main{
+      background-color: white;
+      flex-grow: 3;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title{
+      order: -1;
+    }
+
+    .copyright {
+      background-color: #eeeeee;
+      padding: 1em;
+
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <header>
+      <ul class="header"> 
+        <li class="logo header-child"><a href="#"><h1>Site Title</h1></a></li>
+        <li class="header-child"><a href="#">Item 1</a></li>
+        <li class="header-child"><a href="#">Item 2</a></li>
+        <li class="header-child"><a href="#">Item 3</a></li>
+        <li class="header-child"><a href="#">Item 4</a></li>
+    </header>
+
+  
+  <div class="content">
+    <nav class="child">
+      <h1>Nav</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main class="content-main child">
+      <h3>I'm the first in the source code</h3>
+      <h1 class="title">Main content</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat repellendus at quae maiores aperiam omnis, blanditiis quos obcaecati eos perferendis non doloremque quam totam inventore iure, quidem adipisci, ullam quia.</p>
+      <p>Quam, saepe officiis, atque numquam sapiente labore voluptatibus non delectus ea eius ipsum laboriosam. Vel possimus, inventore iste cumque ipsam delectus maiores veritatis nisi officiis voluptates sit voluptatibus doloremque aut.</p>
+      <p>Quos, veniam facere est voluptatum exercitationem distinctio temporibus, amet fugiat eligendi explicabo minima itaque! Nobis consequatur cumque expedita rerum, error et. Expedita optio error soluta nobis eaque fugiat necessitatibus mollitia!</p>
+      <p class="copyright">Copyright © 2017</p>
+    </main>
+    <aside class="child">
+      <h1>Sidebar</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt distinctio expedita laboriosam placeat officia reprehenderit quidem delectus qui ea tenetur quibusdam maiores molestias tempore ut sapiente non, voluptatum velit omnis!</p>
+    </aside>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation_2</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+  body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+    
+    background-color: #eeeeee;
+  }
+
+  .content{
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    padding:0;
+
+    list-style: none;
+    background-color: pink;
+  }
+  .child {
+    flex-grow: 1;
+    text-align: center;
+    padding:1em;
+    border-left:2px red solid;
+    margin:0.5em 0;
+  }
+
+  .child a{
+    color:red;
+  }
+
+  .child:nth-child(1){
+    border-left: 0;
+  }
+
+  </style>
+    
+</head>
+<body>
+  <ul class="content">
+    <li class="child"><a href="#">Item 1</a></li>
+    <li class="child"><a href="#">Item 2</a></li>
+    <li class="child"><a href="#">Item 3</a></li>
+    <li class="child"><a href="#">Item 4</a></li>
+  </ul>
+</body>
+</html>

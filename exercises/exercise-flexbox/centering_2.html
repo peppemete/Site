@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centering_2</title>
+  <style>
+    body{
+      background-color: #eeeeee;
+      font-family: sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content{
+
+      width: 50em;
+      height: 50em;
+      display: flex;
+      border:2px dashed ;
+      justify-content: center;
+      align-items: center;
+      padding-left:0;
+      list-style: none;
+    }
+
+    .content-child{
+      border:5px pink solid;
+      padding:3em;
+    }
+
+    .child-top{
+      align-self: flex-start;
+    }
+    .child-bottom{
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+    <ul class="content">
+      <li class="content-child child-top">
+        <h1>1. Lorem impsum dolor.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae iste ipsum dolore sit molestias molestiae labore. Alias vitae impedit velit aliquid, animi ullam distinctio dolore ipsum quae doloremque. Enim, facere!</p>
+      </li>
+      <li class="content-child">
+        <h1>2. Lorem impsum dolor.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae iste ipsum dolore sit molestias molestiae labore. Alias vitae impedit velit aliquid, animi ullam distinctio dolore ipsum quae doloremque. Enim, facere!</p>
+      </li>
+      <li class="content-child child-bottom">
+        <h1>3. Lorem impsum dolor.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae iste ipsum dolore sit molestias molestiae labore. Alias vitae impedit velit aliquid, animi ullam distinctio dolore ipsum quae doloremque. Enim, facere!</p>
+      </li>
+    </ul>
+</body>
+</html>
