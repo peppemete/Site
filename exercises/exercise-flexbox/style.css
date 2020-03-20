@@ -1,0 +1,165 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #eeeeee;
+}
+section{
+  margin-top:10em;
+}
+
+.body-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ++++++++++++++++++ */
+/* ++++ Centering +++ */ 
+/* ++++++++++++++++++ */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.centering-content {
+  width: 40em;
+  min-height: 35em;
+
+  border:0.125em dashed black;
+}
+
+.centering-item {
+  flex: 0 1 65%;
+
+  padding:2em;
+  border: 0.5em solid pink;
+}
+
+.item-start {
+  align-self: flex-start;
+}
+
+.item-end {
+  align-self: flex-end;
+}
+
+.item-stretch {
+  align-self: stretch;
+}
+
+/* ++++++++++++++++++ */
+/* +++ Navigation +++ */ 
+/* ++++++++++++++++++ */
+
+.navigation{
+  min-width: 40em;
+  background-color: pink;
+}
+.navigation-content {
+  display: flex;
+  justify-content: center;
+  
+  margin:0;
+  padding-left:0;
+  list-style: none;
+}
+.navigation-item{
+  border-right: 0.125em solid red;
+  margin:.25em 0;
+  align-self: center;
+}
+
+.navigation-item a {
+  display: block;
+  padding:1em;
+
+  text-align: center;
+  color:red;
+ 
+}
+
+.navigation-item:last-child{
+  border-right: 0;
+}
+
+.navigation-full{
+  flex-grow: 1;
+}
+.navigation-logo li:nth-child(2) {
+  border-left:0.125em solid red;
+}
+.logo{
+
+  background-color: red;
+  margin:0;
+  margin-right: auto;
+}
+.logo a{
+  padding: 0 1em;
+  color:#fff;
+}
+
+/* ++++++++++++++++++ */
+/* +++++ layout +++++ */ 
+/* ++++++++++++++++++ */
+
+.layout-content {
+  display: flex;
+  min-height: 50em;
+}
+
+.layout-item{
+  padding: 1em;
+}
+
+nav.layout-item,
+aside.layout-item{
+  flex-basis: 25%;
+  background-color: #ccc;
+}
+main.layout-item{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+main.layout-item h2{
+  order: -1;
+}
+
+main.layout-item>p:first-child{
+  font-weight: bold;
+}
+
+main.layout-item footer {
+  margin-top:auto;
+  background-color: #eee;
+  padding:0.5em;
+}
+header{
+  padding: 0 1em;
+}
+
+.layout-header{
+  display: flex;
+
+  align-items: center;
+  padding-left: 0;
+  list-style: none;
+}
+.layout-header li:first-child{
+  margin-right: auto;
+}
