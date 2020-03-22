@@ -102,7 +102,7 @@ section{
   border-left:0.125em solid red;
 }
 .logo{
-
+  border: 0;;
   background-color: red;
   margin:0;
   margin-right: auto;
@@ -153,13 +153,25 @@ header{
   padding: 0 1em;
 }
 
-.layout-header{
-  display: flex;
-
-  align-items: center;
-  padding-left: 0;
-  list-style: none;
+header.navigation{
+  background-color: #eee;
+  min-width: 100%;
+  padding:1em 0;
 }
-.layout-header li:first-child{
-  margin-right: auto;
+
+header.navigation a{
+  padding:0 1em;
+  color: blue;
+}
+
+header.navigation li{
+  border-color: blue;
+}
+
+header.navigation li:nth-child(2){
+  border-left:0;
+}
+
+header.navigation .logo {
+  background-color: transparent;
 }
